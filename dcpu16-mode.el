@@ -44,7 +44,7 @@
 
 ;; A third level of highlighting that we append to the second
 (defconst dcpu16-font-lock-keywords-3
-  (append dcpu16-font-lock-keyowrds-2
+  (append dcpu16-font-lock-keywords-2
 	  (list
 	   '(";.*" . font-lock-constant-face)))
   "Highlight comments in DCPU16 mode")
