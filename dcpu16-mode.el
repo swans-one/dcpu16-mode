@@ -62,7 +62,7 @@
 (defconst dcpu16-font-lock-keywords-3
   (append dcpu16-font-lock-keywords-2
 	  (list
-	   '(";.*" . font-lock-constant-face)))
+	   '(";.*" . font-lock-comment-face)))
   "Highlight comments in DCPU16 mode")
 
 ;; Define the default level of highlighting
