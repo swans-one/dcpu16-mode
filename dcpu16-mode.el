@@ -38,16 +38,16 @@
 
 ;; These regexps were not hand optimized, they were generated with:
 ;; (regexp-opt '("SET" "ADD" "SUB" "MUL" "DIV" "MOD" "SHL" "SHR" 
-;; "AND" "BOR" "XOR" "IFE" "IFN" "IFG" "IFB"))
-;; (regexp-opt '("A" "B" "C" "X" "Y" "Z" "I" "J"))
+;; "AND" "BOR" "XOR" "IFE" "IFN" "IFG" "IFB" "JSR"))
+;; (regexp-opt '("A" "B" "C" "X" "Y" "Z" "I" "J" "PC" "O"))
 ;;
 ;; They are then surrounded by \< and \> to make sure that they only
 ;; match when surrounded by a space or EOF
 
 (defconst dcpu16-font-lock-keywords-1
   (list
-   '("\\<A\\(?:[DN]D\\)\\|BOR\\|DIV\\|IF[BEGN]\\|M\\(?:OD\\|UL\\)\\|S\\(?:ET\\|H[LR]\\|UB\\)\\|XOR\\>" . font-lock-builtin-face)
-   '("\\<[ABCIJXYZ]\\>" . font-lock-variable-name-face))
+   '("\\<A\\(?:[DN]D\\)\\|BOR\\|DIV\\|IF[BEGN]\\|JSR\\|M\\(?:OD\\|UL\\)\\|S\\(?:ET\\|H[LR]\\|UB\\)\\|XOR\\>" . font-lock-builtin-face)
+   '("\\<PC\\|[ABCIJOXYZ]\\>" . font-lock-variable-name-face))
   "Highlighting expressions for DCPU16 Mode")
 
 ;; A second level of highlighting that we append to the first
