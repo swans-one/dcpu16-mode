@@ -54,7 +54,7 @@
 (defconst dcpu16-font-lock-keywords-2
   (append dcpu16-font-lock-keywords-1
 	  (list
-	   '(":[a-z\\|A-Z\\|_]*" . font-lock-variable-name-face)))
+	   '(":[a-z\\|A-Z\\|_]*" . font-lock-function-name-face)))
   "Highlight labels in DCPU16 Mode")
 
 
