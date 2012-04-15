@@ -52,7 +52,7 @@ some issues. Know issues include:
 Currently, if an instruction is on the same line as a label,
 indentation must be done manually by adding spaces.
 
-** Comment highlighting **
+**Comment highlighting**
 
   Adding a ';' character at the start of line with existing
   instructions may not change the highlight to be a comment
