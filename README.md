@@ -40,7 +40,12 @@ register names.
 ### Indentation Rules:
 
 The indentation rules are fairly simple. Any comment, label or blank
-line is not indented. Every instruction is indented 16 spaces.
+line is not indented. Every instruction is indented to a default of 8
+spaces.
+
+To change this default, the `set-variable` command can be used:
+
+    M-x set-variable RET indentation-spaces [number of spaces] RET
 
 ## LIMITATIONS 
 

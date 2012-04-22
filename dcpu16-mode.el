@@ -69,6 +69,12 @@
 (defvar dcpu16-font-lock-keywords dcpu16-font-lock-keywords-3
   "Default highlighting expressions for DCPU16 mode")
 
+;; Indentation Amount
+;;
+;; We want users of DCPU16 Mode to be able to customize the number
+;; of spaces used for indentation.
+(defvar indentation-spaces 8
+  "*The number of spaces that an instruction will be indented.")
 
 ;; Indentation for DCPU16 code. We base indentation level off of 
 ;; the following rules:
@@ -88,7 +94,7 @@
       (if (looking-at "^\\s-*\n")    ; check for rule 3
 	  (indent-line-to 0)
 	(if (looking-at "^[ \t]*\.") ; check for rule 4
-	    (indent-line-to 16))
+	    (indent-line-to indentation-spaces))
     ))))
 
 
